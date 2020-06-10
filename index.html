@@ -1,0 +1,998 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+    <title>Natural Juicery </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/two.js" type="text/javascript"></script>
+    <script src="js/it.js" type="text/javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            var fromvalue = document.getElementById("Name").value;
+            var subjectvalue = document.getElementById("Email").value;
+            var messagevalue = document.getElementById("Message").value;
+
+            Email.send({
+                SecureToken: "f50fe44c-8f1a-4088-ba01-8b23ee1198c4",
+                To: subjectvalue,
+                From: 'utsavmevada24@gmail.com',
+                Subject: fromvalue,
+                Body: messagevalue
+            }).then(function(message) {
+                alert('Email Devliver');
+            });
+        }
+    </script>
+    <meta name="keywords" content="Fruit land a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <!-- default css files -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link href="css/JiSlider.css" rel="stylesheet">
+    <!-- banner slider css file -->
+    <link href="css/simpleLightbox.css" rel="stylesheet" type="text/css" />
+    <!-- gallery css file -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Font awesome css file -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/two.css" type="text/css">
+
+    <!-- default css files -->
+
+    <!--web font-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+
+    <!--//web font-->
+
+</head>
+
+<!-- Body -->
+
+<body>
+
+    <!-- header -->
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <img src="images/logo.png" style="height: 200px;width: 200px;margin-top: -80px;">
+                    </div>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <nav>
+                        <ul class="nav navbar-nav">
+                            <!-- <br> -->
+                            <li class="active"><a class="scroll" href="index.html">Home</a></li>
+                            <li><a href="#about" class="scroll hvr-bounce-to-bottom">About</a></li>
+                            <li><a href="#Process" class="scroll hvr-bounce-to-bottom">Our Process</a></li>
+                            <li><a href="#OurJuice" class="scroll hvr-bounce-to-bottom">Our Juices</a></li>
+                            <li><a href="#ColdProcess" class="scroll hvr-bounce-to-bottom">Cold Process</a></li>
+                            <li><a href="#team" class="scroll hvr-bounce-to-bottom">Products</a></li>
+                            <li><a href="#gallery" class="scroll hvr-bounce-to-bottom">Gallery</a></li>
+                            <li><a href="#contact" class="scroll hvr-bounce-to-bottom">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            <!-- <div class="head-search">
+				<form action="#" method="post">
+					<div class="formborder">
+						<input type="text" placeholder="Search..." name="Search..." required="">
+						<input type="submit" value="">
+					</div>
+				</form>
+			</div> -->
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- banner slider-->
+    <div class="banner-silder">
+        <div id="JiSlider" class="jislider">
+            <ul>
+                <li>
+                    <div class="w3layouts-banner-top">
+                        <img src="images/a1.jpg">
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top1">
+                        <img src="images/a1.jpg">
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top2">
+                        <img src="images/a1.jpg">
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top3">
+                        <img src="images/a1.jpg">
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <h2 class="heading">About Our Natural Juicery</h2>
+            <div class="col-md-12 aboutleft">
+                <p> Hello, we’re Natural Juicery. We’re new and fresh, just like every single one of our cold pressed juices. The Natural Juicery was founded with a spirited heart and an ambitious goal - to offer the purest, cold pressed juices. Our mission
+                    is to provide fresh, delicious, cold-pressed juices, in order to promote healthy and happy lifestyles to people of all walks of life.
+                </p>
+                <p>
+                    We hope to show you how incorporating our juices as a part of your daily routine will improve all aspects of your life. We believe healthiness is the root of happiness. We believe in equal opportunity Organics for all, so all may live a long beautiful
+                    life We offer 100% raw organic juices that not only do good for your health but taste great too! Natural Juicery is a 100% homegrown company, freshly producing juices within the INDIA.
+                </p>
+                <p>
+                    We at Natural Juicery have a strong belief to make it possible for everybody to enjoy fresh juice.
+
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="about" id="OurJuice">
+        <div class="container">
+
+            <h2 class="heading">Juices </h2>
+            <br />
+
+            <div class="row">
+
+
+                <div class="image_view">
+                    <div class="col-md-6 ">
+                        <img src="images/g6.jpg">
+                    </div>
+                </div>
+                <div class="dfasa">
+                    <div class="col-md-6">
+
+                        <p class="heading_new">
+                            Beet Love
+                        </p>
+                        <br />
+                        <p>
+                            <span class="span_new">Ingredients :</span> Beetroot, Apple, Pear, Cucumber, Mint, Ginger & Lemon
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Nutrients :</span> Beta-Carotene, Folic Acid, Vitamin C, Iron, Calcium, Magnesium, Phosphorus, Potassium, Sulphur
+
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Benefits :
+                            </span> Helps to boost stamina and lower blood presure. Beetroot is one of the healthiest options to include in your daily diet.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="clearfix"> </div>
+            <div class="row">
+
+
+                <div class="image_view">
+                    <div class="col-md-6 ">
+                        <img src="images/g6.jpg">
+                    </div>
+                </div>
+                <div class="dfasa">
+                    <div class="col-md-6">
+
+                        <p class="heading_new">
+                            Beet Love
+                        </p>
+                        <br />
+                        <p>
+                            <span class="span_new">Ingredients :</span> Beetroot, Apple, Pear, Cucumber, Mint, Ginger & Lemon
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Nutrients :</span> Beta-Carotene, Folic Acid, Vitamin C, Iron, Calcium, Magnesium, Phosphorus, Potassium, Sulphur
+
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Benefits :
+                            </span> Helps to boost stamina and lower blood presure. Beetroot is one of the healthiest options to include in your daily diet.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="clearfix"> </div>
+            <div class="row">
+
+
+                <div class="image_view">
+                    <div class="col-md-6 ">
+                        <img src="images/g6.jpg">
+                    </div>
+                </div>
+                <div class="dfasa">
+                    <div class="col-md-6">
+
+                        <p class="heading_new">
+                            Beet Love
+                        </p>
+                        <br />
+                        <p>
+                            <span class="span_new">Ingredients :</span> Beetroot, Apple, Pear, Cucumber, Mint, Ginger & Lemon
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Nutrients :</span> Beta-Carotene, Folic Acid, Vitamin C, Iron, Calcium, Magnesium, Phosphorus, Potassium, Sulphur
+
+                        </p>
+                        <br />
+
+                        <p>
+                            <span class="span_new">
+                                Benefits :
+                            </span> Helps to boost stamina and lower blood presure. Beetroot is one of the healthiest options to include in your daily diet.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+    <svg class="blackwindow" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <path id="path">
+            <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <path id="path1">
+            <animate attributeName="d" from="m0,150 h0" to="m0,150 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <path id="path2">
+            <animate attributeName="d" from="m0,190 h0" to="m0,190 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <path id="path3">
+            <animate attributeName="d" from="m0,230 h0" to="m0,230 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <path id="path4">
+            <animate attributeName="d" from="m0,270 h0" to="m0,270 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <path id="path5">
+            <animate attributeName="d" from="m0,310 h0" to="m0,310 h1100" dur="1s" begin="1s" fill="freeze" />
+        </path>
+        <text font-size="26" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+            <textPath xlink:href="#path">WE ARE RAW.</textPath>
+            <textPath xlink:href="#path1">WE ARE TRANSPARENT.</textPath>
+            <textPath xlink:href="#path2">WE ARE PURE.</textPath>
+            <textPath xlink:href="#path3">WE ARE COLD PRESSED.</textPath>
+            <textPath xlink:href="#path4">WE ARE FRESH.</textPath>
+            <textPath xlink:href="#path5">WE ARE 100% ORGANIC, 100% OF THE TIME.</textPath>
+        </text>
+    </svg>
+    <!-- //banner slider -->
+
+    <!--/about-->z
+
+    <div class="about" id="ColdProcess">
+        <div class="container">
+            <h2 class="heading">Cold prcess</h2>
+            <div class="col-md-12 aboutleft">
+
+                <p>THE PRODUCTS @ Natural Juicery are free of :</p>
+                <br />
+
+                <ul style="margin-left: 50px;">
+                    <li>Sugar</li>
+                    <li>Chemicals</li>
+                    <li>Colors</li>
+                    <li>Flavors</li>
+                    <li>Pasteurization</li>
+                    <li>Preservatives</li>
+                    <li>HPP</li>
+
+
+                </ul>
+                <p> WHAT IS COLD PRESSED?
+                </p>
+                <p>
+                    At Natural Juicery we use the cold-pressed method for juicing. This is the healthiest and best way to make juice from fruit and vegetables. Instead of using a centrifugal machine with high speed rotating blades, fresh fruits and vegetables are pressed
+                    using a hydraulic press juicer that applies enormous pressure to extract the nectar directly from the pulp. Therefor the fruits and vegetables are not exposed to heat, meaning the oxidation process is slowed down, leaving you with the
+                    purest and most nutritious juice possible. The cold-pressed method allows enzymes to stay alive, resulting in raw “living” juice with maximum nutrients up to 72 hours.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="team" id="Process">
+        <div class="w3agile-spldishes">
+            <div class="container">
+                <h3 class="heading">Our Juicery Process</h3>
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="image-responsiove">
+                            <div class="col-md-8">
+                                <img src="images/We.jpg" alt="Our Process">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--team-->
+    <div class="team" id="team">
+        <div class="w3agile-spldishes">
+            <div class="container">
+                <h3 class="heading">Our Products</h3>
+
+                <div class="container">
+
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <BR />
+                    <BR />
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dress-card">
+                                <div class="dress-card-head">
+                                    <img class="dress-card-img-top" src="images/1.jpg" alt="" style="border-radius: 10px;">
+                                </div>
+                                <BR />
+                                <div class="dress-card-body">
+                                    <center>
+                                        <h4 class="dress-card-title">Sugar Cane</h4>
+
+
+                                        <p class="dress-card-para" style="margin: 10PX;"><span class="dress-card-price">Rs.839
+                                                &ensp;</span><span style=" text-decoration: line-through;">Rs.2099</span><span class="dress-card-off">&ensp;(60% OFF)</span></p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--//team-->
+
+    <!-- gallery -->
+    <div id="gallery" class="team">
+        <h3 class="heading">Juicery Gallery</h3>
+        <br />
+        <div class="w3ls_banner_bottom_grids">
+            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="banana" aria-labelledby="banana-tab">
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g1.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g10.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g3.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g4.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g6.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g11.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g5.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g12.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g13.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="	padding:0 5px;
+    margin-bottom: 10px;">
+                            <a href="https://www.instagram.com/p/CBACSLGpyCC/" target="_blank">
+                                <div class="w3layouts_team_grid">
+                                    <img src="images/g15.jpg" alt=" " class="img-responsive" />
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+
+
+
+
+
+
+
+
+    <!-- clients-->
+    <!-- <div class="clients" id="clients">
+		<div class="container">
+			<h3 class="heading">Our Customers</h3>
+			<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+				<div class="wmuSliderWrapper">
+					<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-wrap">
+							<div class="col-md-6 client-grids">
+								<p>In accumsan arcu non turpis dignissim, vitae finibus arcu dapibus In vitae tincidunt
+									turpis. Proin in euismod dolor. Sed eget tellus venenatis, molestie lorem tempus,
+									viverra ante vulputate.</p>
+								<div class="col-md-3 c-img">
+									<img src="images/c1.jpg" alt="" />
+								</div>
+								<div class="col-md-3 c-info">
+									<h4>Victoria</h4>
+									<h5>Customer1</h5>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-6 client-grids">
+								<p>In accumsan arcu non turpis dignissim, vitae finibus arcu dapibus In vitae tincidunt
+									turpis. Proin in euismod dolor. Sed eget tellus venenatis, molestie lorem tempus,
+									viverra ante vulputate.</p>
+								<div class="col-md-3 c-img">
+									<img src="images/c2.jpg" alt="" />
+								</div>
+								<div class="col-md-3 c-info">
+									<h4>Isabella</h4>
+									<h5>Customer2</h5>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</article>
+					<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-wrap">
+							<div class="col-md-6 client-grids">
+								<p>In accumsan arcu non turpis dignissim, vitae finibus arcu dapibus In vitae tincidunt
+									turpis. Proin in euismod dolor. Sed eget tellus venenatis, molestie lorem tempus,
+									viverra ante vulputate.</p>
+								<div class="col-md-3 c-img">
+									<img src="images/c3.jpg" alt="" />
+								</div>
+								<div class="col-md-3 c-info">
+									<h4>Elizabeth</h4>
+									<h5>Customer3</h5>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-6 client-grids">
+								<p>In accumsan arcu non turpis dignissim, vitae finibus arcu dapibus In vitae tincidunt
+									turpis. Proin in euismod dolor. Sed eget tellus venenatis, molestie lorem tempus,
+									viverra ante vulputate.</p>
+								<div class="col-md-3 c-img">
+									<img src="images/c4.jpg" alt="" />
+								</div>
+								<div class="col-md-3 c-info">
+									<h4>Alexa</h4>
+									<h5>Customer4</h5>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//clients-->
+
+    <!-- subscribe -->
+    <!-- <div class="subscribe">
+		<div class="container">s
+			<h3 class="heading">Subscribe With Us</h3>
+			<div class="subscribe-grid">
+				<form action="#" method="post">
+					<input type="email" placeholder="Enter Your Email" name="email" required="">
+					<button class="btn1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div>
+	</div> -->
+    <!-- //subscribe -->
+
+    <!-- contact -->
+
+    <div class="contact" id="contact">
+        <div class="col-md-3 contactleft">
+            <h4>Address</h4>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>New BEL Rd,Bengaluru, Karnataka</p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>Tel : +(12) 498 5563 3312 , +(12) 498 5563 3439</p>
+            <p>Fax : +(12) 498 5563 2178</p>
+            <p>Contact Name : Vaibhav Mevada</p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p><a href="mailto:info@example.com">info@examplemail.com</a></p>
+            <a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a style="margin-left: 10px;" href="https://www.instagram.com/naturaljuicery_india/" target="_black">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+
+
+
+        </div>
+        <div class="col-md-4 contactleft">
+            <div class="contactform">
+                <h4>Contact Us</h4>
+                <form method="post">
+                    <div class="col-md-6 agileits_agile_about_mail_left">
+                        <input id="Name" type="text" name="Name" placeholder="Name">
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 agileits_agile_about_mail_left">
+                        <input id="Email" type="email" name="Email" placeholder="Email">
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <textarea id="Message" name="Message" placeholder="Message..."></textarea>
+                    <div class="submit">
+
+                        <input type="button" value="Submit" onclick="sendEmail();">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5 contactright">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0854103804872!2d77.56838331482253!3d13.030232790817472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17dd8d2c3509%3A0xa139a9edcf22493c!2sNew%20BEL%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1591769145887!5m2!1sen!2sin"
+                width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <br />
+        <br />
+
+
+
+    </div>
+
+
+
+    <!-- <div class="contact" id="contact">
+        <div class="container"> -->
+
+    <!-- <div class="col-md-6 contactleft">
+                <h3 class="heading">Contact us</h3>
+                <h4>Natural Juicery</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>New BEL Rd,Bengaluru, Karnataka</p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>Tel : +(12) 498 5563 3312 , +(12) 498 5563 3439</p>
+                <p>Fax : +(12) 498 5563 2178</p>
+                <p>Contact Name : Vaibhav Mevada</p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p><a href="mailto:info@example.com">info@examplemail.com</a></p>
+                <div class="contactform">
+                    <h4>Contact Form</h4>
+                    <form method="post">
+                        <div class="col-md-6 agileits_agile_about_mail_left">
+                            <input id="Name" type="text" name="Name" placeholder="Name">
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-6 agileits_agile_about_mail_left">
+                            <input id="Email" type="email" name="Email" placeholder="Email">
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <textarea id="Message" name="Message" placeholder="Message..."></textarea>
+                        <div class="submit">
+
+                            <input type="button" value="Submit" onclick="sendEmail();">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 contactright">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0854103804872!2d77.56838331482253!3d13.030232790817472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17dd8d2c3509%3A0xa139a9edcf22493c!2sNew%20BEL%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1591769145887!5m2!1sen!2sin"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div> -->
+    <!-- </div>
+    </div> -->
+    <!-- //contact -->
+
+    <!-- footer -->
+    <!-- <div class="footer">
+		<div class="container">
+			<div class="col-md-6 footernav">
+				<div class="agileits-social">
+					<ul>
+						<li><a href="#home" class="scroll">Home</a></li>
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#services" class="scroll">Services</a></li>
+						<li><a href="#team" class="scroll">Farmers</a></li>
+						<li><a href="#clients" class="scroll">Clients</a></li>
+						<li><a href="#gallery" class="scroll">Gallery</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 copyright">
+				<p>© 2017 Fruit Land. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+		</div>
+	</div> -->
+    <!-- //footer -->
+
+    <!-- bootstrap-pop-up -->
+    <!-- <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Fruit land</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				</div>
+				<div>
+					<div class="modal-body">
+						<img src="images/banana.png" alt=" " class="img-responsive" />
+						<p>Ut enim ad minima veniam, quis nostrum
+							exercitationem ullam corporis suscipit laboriosam,
+							nisi ut aliquid ex ea commodi consequatur? Quis autem
+							vel eum iure reprehenderit qui in ea voluptate velit
+							e.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+								esse quam nihil molestiae consequatur.</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+    <!-- //bootstrap-pop-up -->
+
+    <!-- Default-JavaScript-File -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- //Default-JavaScript-File -->
+
+    <!-- Banner Slider js script file-->
+    <script src="js/JiSlider.js"></script>
+    <script>
+        $(window).load(function() {
+            $(' #JiSlider ').JiSlider({
+                color: '#fff ',
+                start: 3,
+                reverse: false
+            }).addClass('ff ')
+        })
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount ', 'UA-36251023-1 ']);
+        _gaq.push(['_setDomainName ', 'jqueryscript.net ']);
+        _gaq.push(['_trackPageview ']);
+
+        (function() {
+            var ga = document.createElement('script ');
+            ga.type = 'text/javascript ';
+            ga.async = true;
+            ga.src = ('https: ' == document.location.protocol ? 'https://ssl ' : 'http://www ') + '.google-analytics.com/ga.js ';
+            var s = document.getElementsByTagName('script ')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- //Banner Slider js script file-->
+
+    <!-- required-js-files-->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: false,
+                navigationText: false,
+                pagination: true,
+            });
+        });
+    </script>
+    <!--//required-js-files-->
+
+    <!-- Light box js-file-->
+    <script src="js/simpleLightbox.js"></script>
+
+    <!-- //Light box js-file-->
+
+    <!-- clients js file-->
+    <script src="js/jquery.wmuSlider.js"></script>
+    <script>
+        $('.example1 ').wmuSlider();
+    </script>
+    <!-- //clients js file -->
+
+    <!-- scrolling script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body ').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //scrolling script -->
+
+    <!-- Stars scrolling script -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            	var defaults = {
+            	containerID: 'toTop ', // fading element id
+            	containerHoverID: 'toTopHover ', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear ' 
+            	};
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart '
+            });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <!-- //Ends scrolling script -->
+
+</body>
+<!-- //Body -->
+
+</html>
